@@ -5,18 +5,18 @@
     <link>https://cmdgcz.github.io/posts/</link>
     <description>Recent content in Posts on 独独深蓝</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 29 Mar 2020 22:14:13 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2020 12:51:31 +0800</lastBuildDate>
     
 	<atom:link href="https://cmdgcz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello</title>
-      <link>https://cmdgcz.github.io/posts/hello/</link>
-      <pubDate>Sun, 29 Mar 2020 22:14:13 +0800</pubDate>
+      <title>Excel笔记</title>
+      <link>https://cmdgcz.github.io/posts/excel%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Thu, 30 Apr 2020 12:51:31 +0800</pubDate>
       
-      <guid>https://cmdgcz.github.io/posts/hello/</guid>
-      <description>hello world 你好， 世界</description>
+      <guid>https://cmdgcz.github.io/posts/excel%E7%AC%94%E8%AE%B0/</guid>
+      <description>text函数  默认格式：  =TEXT(A1, &amp;quot;正数;负数;零;其他&amp;quot;)  例子：=TEXT(&amp;quot;5&amp;quot;, &amp;quot;0;;;!0&amp;quot;) 结果返回 5 例子：=TEXT(&amp;quot;0&amp;quot;, &amp;quot;0;;;!0&amp;quot;) 结果返回 空 例子：=TEXT(&amp;quot;我&amp;quot;, &amp;quot;0;;;!0&amp;quot;) 结果返回 0 此函数表示：正数返回自身， 负数和零显示为空, 其他格式强制转为零，其中函数里的第一个&amp;quot;0&amp;quot;是一个数字占位符，注意！     如果指定条件， 则只能用3种情况，  =TEXT(A1, &amp;quot;[&amp;gt;0]正数;[=0]零;负数&amp;quot;    LOOKUP函数  返回最后一个文本  =LOOKUP(“座”,lookup_vertor,[result_vector])   返回最后一个数字  =LOOKUP(9E+307,lookup_vertor,[result_vector])   使用lookup函数返回符合条件的最后一条数据通用公式：  =LOOKUP(1,0/(条件),目标区域或数组)    VLOOKUP函数  存在2个条件的查找  =VLOOKUP(条件一&amp;amp;条件二，IF({1,0},条件一区域&amp;amp;条件二区域，返回列）,2,0）最后同时按ctrl +shift +回车 三键结束   逆向查询（3种方法）  =vlookup(查询值，if({1,0},查询区域2，查询区域1),2,0) =vlookup(查询值，choose({1,2},查询区域2，查询区域1),2,0) =INDEX(查询区域，查询的位置【match()】)   一对多查询  =IFERROR(VLOOKUP(ROW(A1),区域,2,FALSE),&amp;quot;&amp;quot;) 建立辅佐列，用countif函数查出指定数出现的次数用low(A1)函数还生成序列1234……的值    MATCH函数  技巧：MATCH(0,0/区域,0) 可以用0来查找区域中出现数字的位置  Countif函数  检查重复计数  =IF(COUNTIF($B$3:B3,B3)&amp;gt;1,&amp;quot;重复&amp;quot;,&amp;quot;&amp;quot;)   统计不重复值个数  =SUM(1/COUNTIF(B3:B12,B3:B12))    用函数生成各种数字序列  输入123123123的循环序列，  =MOD(ROW()-1,3)+1 函数中的3，表示123123，如果是4，表示12341234，依次类推……   输入012012，  =MOD(ROW()-1,3)   输入111222的循环序列  =CEILING(ROW()/3,1) 函数中的3，表示111222，如果是4，表示11112222，依次类推……    透视表函数 批量获取数据</description>
     </item>
     
   </channel>
